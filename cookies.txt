@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.finansiahero.com	TRUE	/	FALSE	1999999999	visid_incap_2337430	BfOr6RUiSyWFPgsuoVEq/Hq2OWcAAAAAQUIPAAAAAABUCy1NGF4ZktVCDj0InoAN
+.finansiahero.com	TRUE	/	FALSE	1999999999	incap_ses_1037_2337430	1Nk0Koth8wHvFFJmMipkDnq2OWcAAAAAKTkHNP3jAGNrRmzOu4BqKQ==
+www.finansiahero.com	TRUE	/	FALSE	1999999999	SameSite	None
+
