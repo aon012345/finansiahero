@@ -1,6 +1,29 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-.finansiahero.com	TRUE	/	FALSE	1999999999	visid_incap_2337430	BfOr6RUiSyWFPgsuoVEq/Hq2OWcAAAAAQUIPAAAAAABUCy1NGF4ZktVCDj0InoAN
-.finansiahero.com	TRUE	/	FALSE	1999999999	incap_ses_1037_2337430	1Nk0Koth8wHvFFJmMipkDnq2OWcAAAAAKTkHNP3jAGNrRmzOu4BqKQ==
-www.finansiahero.com	TRUE	/	FALSE	1999999999	SameSite	None
+.ex-nova.com	TRUE	/	FALSE	1999999999	Traceid	027740c68283b7c7fe1ca13e5fccec2f
+.ex-nova.com	TRUE	/	FALSE	1999999999	aff	38833
+.ex-nova.com	TRUE	/	FALSE	1999999999	afftrack	GAD_PMax_ASIA_TH_TH_Exnova_20802280459____CONVTRANSFR__clickid-EAIaIQobChMIxs3n1YbjiQMVzhGDAx0VZCJEEAMYAyAAEgJkOfD_BwE
+.ex-nova.com	TRUE	/	FALSE	1999999999	SameSite	None
+.ex-nova.com	TRUE	/	FALSE	1999999999	aff_ts	2024-11-17T09:32:12Z
+.ex-nova.com	TRUE	/	FALSE	1999999999	landing	/th/
+.ex-nova.com	TRUE	/	FALSE	1999999999	IsRestrictedCountry	false
+.ex-nova.com	TRUE	/	FALSE	1999999999	IsRegulatedCountry	false
+.ex-nova.com	TRUE	/	FALSE	1999999999	Country	th
+.ex-nova.com	TRUE	/	FALSE	1999999999	CountryID	194
+.ex-nova.com	TRUE	/	FALSE	1999999999	AffTrackGroup	BT_GL_WEB
+.ex-nova.com	TRUE	/	FALSE	1999999999	Serv	NL
+.ex-nova.com	TRUE	/	FALSE	1999999999	AppID	id871125783
+.ex-nova.com	TRUE	/	FALSE	1999999999	brand_id	10
+.ex-nova.com	TRUE	/	FALSE	1999999999	support_email	support@exnova.com
+.ex-nova.com	TRUE	/	FALSE	1999999999	company_id	15
+.ex-nova.com	TRUE	/	FALSE	1999999999	IsAppStoreCountry	true
+.ex-nova.com	TRUE	/	FALSE	1999999999	experimentChooseAfterRegExp	choose
+.ex-nova.com	TRUE	/	FALSE	1999999999	experiment_version	ChooseAfterRegExp-choose
+.ex-nova.com	TRUE	/	FALSE	1999999999	RedirectDomain	trade.exnova.com
+.ex-nova.com	TRUE	/	FALSE	1999999999	RedirectDomains	trade.exnova.com,trade.exnova.com
+.ex-nova.com	TRUE	/	FALSE	1999999999	referrer	https://ex-nova.com/th/?experiment_chooseafterregexp=CHOOSE
+ex-nova.com	TRUE	/	FALSE	1999999999	SameSite	None
+.iqoption.com	TRUE	/	FALSE	1999999999	Traceid	64508a2f7cd0dc0efc2bb466cd8ebe02
+static.cdnroute.io	TRUE	/	FALSE	1999999999	SameSite	None
+static.cdnroute.io	TRUE	/	FALSE	1999999999	connection_track	01a4ca7064e8a71d469998c7bcb43817
 

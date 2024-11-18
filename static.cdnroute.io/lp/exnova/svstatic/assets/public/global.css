@@ -1,0 +1,497 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* fix onclick on document on iOS */
+/* без этого на ios мобилах не срабатывает document.onclick */
+
+@media (max-width: 639px) {
+  html * {
+    cursor: pointer;
+  }
+}
+
+/* iOS Safari remove gray highlight when tapping links */
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* iPad Input Shadows */
+
+input[type='text'],
+input[type='email'],
+input[type='search'],
+input[type='password'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* mobile firefox too! */
+}
+
+input[type='text']::-ms-clear {
+  display: none;
+}
+
+input[type='password']::-ms-reveal {
+  display: none;
+}
+
+/**
+* 1. Set default font family to sans-serif.
+* 2. Prevent iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+* Improve readability when focused and also mouse hovered in all browsers.
+*/
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+* Re-set default cursor for disabled elements.
+*/
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+* Remove most spacing between table cells.
+*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*******************************
+            Page
+*******************************/
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-width: 300px;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+bdo[dir='rtl'] {
+  text-align: right;
+}
+
+button {
+  padding: 0;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* animations https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/ */
+.above-the-fold,
+.prepare-animated {
+  opacity: 0;
+}
+.animated {
+  opacity: 1;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-name: animate-fade;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated.pop {
+  animation-name: animate-pop;
+}
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    transform: translate(0, -10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: translate(0, 0);
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.6s;
+}
+.delay-2 {
+  animation-delay: 0.7s;
+}
+.delay-3 {
+  animation-delay: 0.8s;
+}
+.delay-4 {
+  animation-delay: 0.9s;
+}
+.delay-5 {
+  animation-delay: 1s;
+}
+.delay-6 {
+  animation-delay: 1.1s;
+}
+.delay-7 {
+  animation-delay: 1.2s;
+}
+.delay-8 {
+  animation-delay: 1.3s;
+}
+.delay-9 {
+  animation-delay: 1.4s;
+}
+.delay-10 {
+  animation-delay: 1.5s;
+}
+.delay-11 {
+  animation-delay: 1.6s;
+}
+.delay-12 {
+  animation-delay: 1.7s;
+}
+.delay-13 {
+  animation-delay: 1.8s;
+}
+.delay-14 {
+  animation-delay: 1.9s;
+}
+.delay-15 {
+  animation-delay: 2s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animated {
+    animation: none !important;
+  }
+}
+
+/* fonts system */
+
+h1,
+.heading-1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: -1.6px;
+}
+
+h2,
+.heading-2 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1.3px;
+}
+
+h3,
+.heading-3 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: -1px;
+}
+
+h4,
+.heading-4 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: -0.8px;
+}
+
+h5,
+.heading-5 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: -0.6px;
+}
+
+h6,
+.heading-6 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: -0.4px;
+}
+
+.heading-7 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.3px;
+}
+
+.text-1 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: -0.5px;
+}
+
+.text-2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.25px;
+}
+
+.text-3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.text-4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.09px;
+}
+
+/* L */
+@media (max-width: 1439px) {
+  h1,
+  .heading-1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -1.3px;
+  }
+
+  h2,
+  .heading-2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -1px;
+  }
+
+  h3,
+  .heading-3 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: -0.8px;
+  }
+
+  h4,
+  .heading-4 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+  }
+
+  h5,
+  .heading-5 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+  }
+
+  h6,
+  .heading-6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.25px;
+  }
+
+  .heading-7 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+  }
+
+  .text-1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.25px;
+  }
+
+  .text-2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+  }
+
+  .text-3 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.1px;
+  }
+
+  .text-4 {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+}
+
+/* M */
+@media (max-width: 1199px) {
+  h1,
+  .heading-1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: -1.2px;
+  }
+
+  h2,
+  .heading-2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: -1px;
+  }
+}
+
+/* S */
+@media (max-width: 991px) {
+  h1,
+  .heading-1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+  }
+  
+  h2,
+  .heading-2 {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: -0.7px;
+  }
+  
+  h3,
+  .heading-3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: -0.6px;
+  }
+  
+  h4,
+  .heading-4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.5px;
+  }
+  
+  h5,
+  .heading-5 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.4px;
+  }
+}
+
+.mobile h1,
+.mobile .heading-1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.8px;
+}
+
+.mobile h2,
+.mobile .heading-2 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: -0.7px;
+}
+
+.mobile h3,
+.mobile .heading-3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: -0.6px;
+}
+
+.mobile h4,
+.mobile .heading-4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+}
+
+.mobile h5,
+.mobile .heading-5 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.4px;
+}
+
+/* XXS */
+@media (max-width: 427px) {
+  h6,
+  .heading-6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.25px;
+  }
+}
